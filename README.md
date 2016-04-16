@@ -1,0 +1,1 @@
+# rails-angularjs-sample-project
