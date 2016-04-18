@@ -25,6 +25,8 @@ gem 'devise'
 
 gem 'bower-rails'
 
+gem 'faker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
