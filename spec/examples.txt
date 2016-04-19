@@ -1,0 +1,8 @@
+example_id                                   | status | run_time        |
+-------------------------------------------- | ------ | --------------- |
+./spec/dummy_spec.rb[1:1]                    | passed | 0.00115 seconds |
+./spec/dummy_spec.rb[1:2]                    | failed | 0.10943 seconds |
+./spec/features/angular_test_spec.rb[1:1]    | passed | 5.13 seconds    |
+./spec/features/customer_search_spec.rb[1:1] | passed | 2.98 seconds    |
+./spec/features/customer_search_spec.rb[1:2] | passed | 0.48066 seconds |
+./spec/models/user_spec.rb[1:1:1]            | passed | 0.14455 seconds |
