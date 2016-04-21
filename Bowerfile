@@ -1,9 +1,12 @@
 asset 'bootstrap-sass-official'
 
 # START_HIGHLIGHT
+asset 'angular-resource'
 # END_HIGHLIGHT
 
 asset 'angular', '~> 1.5'
 resolution 'angular', '1.5'
 asset 'angular-mocks'
 asset 'angular-route'
+asset 'angular-messages'
+asset 'angular-bootstrap'

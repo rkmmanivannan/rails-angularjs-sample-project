@@ -6,13 +6,7 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/dcbang for more book information.
 #---
-class Customer < ActiveRecord::Base
-  has_many :customers_shipping_address
-
-  def primary_shipping_address
-    self.customers_shipping_address.find_by(primary: true).address
-  end
-  has_one :customers_billing_address
-  has_one :billing_address, through: :customers_billing_address, 
-                             source: :address
+class CustomersBillingAddress < ActiveRecord::Base
+  belongs_to :address
+  belongs_to :customer
 end

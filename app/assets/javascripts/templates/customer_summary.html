@@ -1,0 +1,26 @@
+<!--
+ ! Excerpted from "Rails, Angular, Postgres, and Bootstrap",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material,
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose.
+ ! Visit http://www.pragmaticprogrammer.com/titles/dcbang for more book information.
+-->
+<div class="clearfix">
+  <h3 class="pull-right">
+    <small class="text-uppercase">Joined</small>
+    {{ cust.created_at | date }}
+    {{ cust.joined_at | date }}
+  </h3>
+  <h2 class="h3">
+    {{ cust.first_name | name }} {{ cust.last_name | name }}
+    <small>{{ cust.username }}</small>
+  </h2>
+  <div class="pull-right" ng-if="viewDetailsFunction">
+    <button class="btn btn-small btn-primary"
+            ng-click="viewDetailsFunction(cust)">
+      View Details…
+    </button>
+  </div>
+  <h4>{{ cust.email }}</h4>
+</div>
